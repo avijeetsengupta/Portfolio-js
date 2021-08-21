@@ -13,7 +13,7 @@ $(document).ready(function(){
     });
     // slide-up script
     $('.scroll-up-btn').click(function(){
-        
+        $('html').animate({scrollTop: 0});
     });
     
     // toggle menu/navbar script
@@ -21,6 +21,21 @@ $(document).ready(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i ').toggleClass("active");
     });
+
+    //typing animation script
+    var typed = new Typed(".typing",{
+        strings : ["Designer", "Developer", "Learner", "Software coder"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+    var typed = new Typed(".typing-2",{
+        strings : ["Designer", "Developer", "Learner", "Software coder"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
 
     // owl carousel script
     $('.carousel').owlCarousel({
